@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a:link, a:visited, a:active {
+  text-decoration:none;
+}
+
+.contenedor{
+  background-color: #FFFFFF;
+  opacity: 100%;
+  max-width: 1200px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top:2%;
+}
+
+.div-logo{
+  height: 24px;
+}
+
+.logo{
+  height: 100%;
+}
+
+.h1, .h2{
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: 42px;
+}
+
+.h1, .h2, .h3{
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+  
+.parrafo, li, .texto-footer, .button, .menu-list-mobile{
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.h1, .h3, .button, .span-dot, .parrafo, .link, .texto-footer, .icono-footer{
+    color: #060A24;
+}
+
+.h1, .title-invitados{
+  margin-bottom: 3%;
+  margin-top:10%;
+}
+
+.h3{
+  font-size: 24px;
+  letter-spacing: 0;
+  text-align: center;
+  padding-top: 7%;
+}
+
+.parrafo, .texto-footer{
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+.button{
+  background: #00F3BB;
+  border:none;
+  height: 48px;
+  width: 100%;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 22px;
+  margin-top: 8%; 
+}
+
+.button, .li, .menu-list-mobile{
+  font-size: 16px;
+}
+
+.button:hover{
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+}
+
+.flex-row-mobile{
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column-mobile{
+  display: flex;
+  flex-direction: column;
+}
+
+.nav{
+  justify-content: space-between;
+  align-items: star;
+}
+
+li{
+  list-style: none;
+  line-height: 28px;
+}
+
+ul li:not(:first-child){
+  padding-left: 48px;
+}
+
+.desktop-item .link:hover{
+  color: #00F3BB;
+  text-decoration:line-through;
+}
+
+.desktop-item .link:active{
+  color: rgba(6,10,36,0.56);
+  text-decoration:line-through;
+}
+
+.desktop-menu, .checkbox, .menu-list-mobile, .detail-desktop{
+  display: none;
+}
+
+.mobile-menu{
+  align-items: flex-end;
+}
+
+.navigation-button{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-list-mobile{
+  background: #0000EC;
+  letter-spacing: 0;
+  line-height: 28px;
+  width: 230%;
+  height: 224px;
+  padding-left: 15%;
+}
+
+.mobile-item .link{
+  color: #FFFFFF;
+}
+
+.mobile-item{
+  margin-top: 24px;
+}
+
+.checkbox:checked ~ .menu-list-mobile {
+  display: inline-block;
+}
+
+.menu-hamburguesa {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+}
+
+.menu-hamburguesa:focus, .button{
+  outline: none;
+}
+
+/* Inicio estilos svg menu hamburguesa */
+
+.line{
+  fill: none;
+  stroke: black;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line, .line1, .line2, .line3, .opened .line1, .opened .line2, .opened .line3{
+  stroke-width: 6;
+}
+
+.line1, .line3{
+  stroke-dasharray: 60 207;
+}
+
+.line2{
+  stroke-dasharray: 60 60;
+}
+
+.opened .line1, .opened .line3{
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+}
+
+.opened .line2{
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+}
+
+/* Fin estilos svg menu hamburguesa */
+
+.span-world{
+  text-decoration:line-through;
+}
+
+.button-conoce{
+  width: 100%;
+}
+
+.button-conoce-mas, .button-escucha-episodios{
+  margin-bottom: 24px;
+}
+
+.episodios{
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  clip-path: polygon(0 6%, 100% 0, 100% 96%, 0 100%);
+  margin-top: 24px;
+}
+
+.title-episodios{
+  padding-top: 64px;
+  color: #FFFFFF;
+  margin-left: 9%;
+}
+
+.iframe{
+  margin-top: 11px;
+  padding-right: 2%;
+  padding-left: 2%;
+  margin-top: 2%;
+}
+
+.contenedor-iframe{
+  align-items: center;
+}
+
+.iframe-superior{
+  margin-top: 3%;
+}
+
+.iframe-inferior{
+  padding-bottom: 25%;
+}
+
+.section-donde-venimos{
+  margin-top: -15%;
+}
+
+.div-phone{
+  max-height: 660px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-phone{
+  max-width: 360px;
+  z-index: 1;
+}
+
+.title-donde-venimos{
+  margin-bottom: 3%;
+}
+
+.margin-al-limite{
+  margin-left: -6%;
+  margin-right: -6%;
+}
+
+.div-image-invitados{
+  margin-top: -1px;
+  justify-content: center;
+  display: flex;
+}
+
+.image-invitados{
+  width: 100%;
+}
+
+.title-algunos-temas{
+  margin-top: 7%;
+}
+  
+.icono{
+  justify-content: start;
+  align-items: center;
+  margin-top: 8%;
+  margin-left: 1%;
+  flex: 1;
+}
+
+.novedades{
+  justify-content: center;
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+  margin-top: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 341px;
+}
+  
+.title-novedades{
+  margin-top: 6%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.texto-footer{
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-imagenes-footer{
+  justify-content: space-evenly;
+  margin-bottom: 31px;
+  margin-top: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .div-logo{
+    height: 36px;
+  }
+  
+  .h1{
+    font-size: 64px;
+    margin-top: 12%;
+  }
+  
+  .h2{
+    font-size: 48px;
+  }
+
+  .parrafo, .link, .texto-footer{
+    font-size: 16px;
+  }
+
+  .button{
+    font-size: 18px;
+    height: 56px;
+  }
+
+  .button-conoce{
+    width: 226px;
+  }
+
+  .button-escucha-episodios{
+    width: 345px;
+  }
+
+  .span-dot{
+    color: #0000EC;
+  }
+
+  .mobile-menu, .detail-mobile{
+    display: none;
+  }
+
+  .desktop-menu{
+    display: flex;
+    justify-content: flex-end;
+    flex: 6;
+  }
+
+  .section-donde-venimos{
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: -15%;
+  }
+
+  .div-donde-venimos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+  }
+
+  .p-dedonde-venimos{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+  }
+
+  .contenedor-image-algunos-temas{
+    margin-right: 15%;
+    margin-left: 5%;
+  }
+
+  .contenedor-footer, .contenedor-image-algunos-temas{
+    justify-content: space-between;
+  }
+
+  .margin-desktop{
+    margin-left: 5%;
+  }
+
+  .detail-desktop{
+    display: inline-block;
+    max-width: 628px;
+  }
+
+  .title{
+    margin-top: 129px;
+  }
+
+  .novedades {
+    align-items: center;
+    height: 518px;
+  }
+
+  .contenedor-imagenes-footer{
+    width: 320px;
+    justify-content: inherit;
+  }
+
+  .margin-footer{
+    margin-top: 36px;
+    margin-bottom: 31px;
+  }
+
+  .title-episodios{
+    padding-top: 14%;
+    margin-left: 9%;
+  }
+
+  .contenedor-episodios{
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  .iframe{
+    flex: 2;
+  }
+
+  .flex-row-desktop{
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  body{
+    display: flex;
+    justify-content: center;
+  }
+}
