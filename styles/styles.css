@@ -237,7 +237,7 @@ ul .desktop-item:not(:first-child){
 }
 
 .section-donde-venimos{
-  margin-top: -15%;
+  transform: translateY(-7%);
 }
 
 .div-phone{
@@ -365,7 +365,7 @@ ul .desktop-item:not(:first-child){
   .section-donde-venimos{
     margin-left: 7%;
     margin-right: 7%;
-    margin-top: -15%;
+    transform: translateY(-20%);
   }
 
   .div-donde-venimos{
