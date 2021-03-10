@@ -430,6 +430,10 @@ ul .desktop-item:not(:first-child){
     flex: 2;
   }
 
+  .iframe-inferior{
+    padding-bottom: 17%;
+  }
+
   .flex-row-desktop{
     display: flex;
     flex-direction: row;
