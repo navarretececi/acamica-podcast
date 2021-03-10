@@ -208,6 +208,10 @@ ul .desktop-item:not(:first-child){
   margin-bottom: 24px;
 }
 
+.article{
+  margin-top: 10%;
+}
+
 .episodios{
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
   clip-path: polygon(0 6%, 100% 0, 100% 96%, 0 100%);
