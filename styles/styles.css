@@ -311,6 +311,11 @@ ul .desktop-item:not(:first-child){
   margin-top: 16px;
 }
 
+.icono-footer {
+  align-items: center;
+  display: flex;
+}
+
 @media only screen and (min-width: 768px) {
   .div-logo{
     height: 36px;
