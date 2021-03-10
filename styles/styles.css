@@ -103,6 +103,10 @@ ul .desktop-item:not(:first-child){
   padding-left: 48px;
 }
 
+.desktop-item .link{
+  transition: all 0.5s ease;
+}
+
 .desktop-item .link:hover{
   color: #00F3BB;
   text-decoration:line-through;
