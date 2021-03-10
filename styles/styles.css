@@ -200,7 +200,7 @@ ul .desktop-item:not(:first-child){
   width: 100%;
 }
 
-.button-conoce-mas, .button-escucha-episodios{
+.button-conoce, .button-escucha-episodios{
   margin-bottom: 24px;
 }
 
@@ -313,6 +313,10 @@ ul .desktop-item:not(:first-child){
 .icono-footer {
   align-items: center;
   display: flex;
+}
+
+.button a, .mobile-item a{
+  display: block;
 }
 
 @media only screen and (min-width: 768px) {
