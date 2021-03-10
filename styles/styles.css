@@ -22,10 +22,6 @@ a:link, a:visited, a:active {
   margin-top:2%;
 }
 
-.div-logo{
-  height: 24px;
-}
-
 .logo{
   height: 100%;
 }
@@ -96,7 +92,7 @@ a:link, a:visited, a:active {
 
 .nav{
   justify-content: space-between;
-  align-items: star;
+  align-items: end;
 }
 
 li{
@@ -104,7 +100,7 @@ li{
   line-height: 28px;
 }
 
-ul li:not(:first-child){
+ul .desktop-item:not(:first-child){
   padding-left: 48px;
 }
 
@@ -283,7 +279,6 @@ ul li:not(:first-child){
   justify-content: start;
   align-items: center;
   margin-top: 8%;
-  margin-left: 1%;
   flex: 1;
 }
 
@@ -318,6 +313,7 @@ ul li:not(:first-child){
 @media only screen and (min-width: 768px) {
   .div-logo{
     height: 36px;
+    display: flex;
   }
   
   .h1{
@@ -380,8 +376,7 @@ ul li:not(:first-child){
   }
 
   .contenedor-image-algunos-temas{
-    margin-right: 15%;
-    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .contenedor-footer, .contenedor-image-algunos-temas{
@@ -418,7 +413,7 @@ ul li:not(:first-child){
 
   .title-episodios{
     padding-top: 14%;
-    margin-left: 9%;
+    margin-left: 10%;
   }
 
   .contenedor-episodios{
