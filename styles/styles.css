@@ -150,7 +150,7 @@ li {
 /* Inicio estilos menu hamburguesa */
 
 .linea {
-  width: 28px;
+  width: 18px;
   height: 2px;
   transition: all 0.5s;
   border-radius: 8px;
@@ -202,7 +202,6 @@ li {
   display: flex;
   list-style: none;
   transition: all 0.5s;
-  height: 25%;
   align-items: center;
 }
 
