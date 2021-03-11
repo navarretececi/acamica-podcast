@@ -182,6 +182,10 @@ li {
   padding-left: 10%;
 }
 
+.checkbox:checked ~ .menu-container ul li {
+  color: #FFFFFF;
+}
+
 li {
   display: flex;
   list-style: none;
@@ -387,20 +391,20 @@ ul {
     flex: 6;
   }
 
-  ul .desktop-item:not(:first-child) {
+  ul .menu-item:not(:first-child) {
     padding-left: 48px;
   }
 
-  .desktop-item .link {
-    transition: all 0.5s ease;
+  .menu-item .link {
+    transition: all 0.3s ease;
   }
 
-  .desktop-item .link:hover {
+  .menu-item .link:hover {
     color: #00f3bb;
     text-decoration: line-through;
   }
 
-  .desktop-item .link:active {
+  .menu-item .link:active {
     color: rgba(6, 10, 36, 0.56);
     text-decoration: line-through;
   }
