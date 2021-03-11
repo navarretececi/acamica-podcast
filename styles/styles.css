@@ -32,16 +32,16 @@ a:active {
   height: 100%;
 }
 
-.h1,
-.h2 {
+.principal-title,
+.secundary-title {
   font-size: 36px;
   letter-spacing: 0;
   line-height: 42px;
 }
 
-.h1, 
-.h2, 
-.h3 {
+.principal-title, 
+.secundary-title, 
+.title-icono {
   font-family: "IBM Plex Sans", sans-serif;
 }
 
@@ -53,23 +53,27 @@ li,
   font-family: "IBM Plex Mono", monospace;
 }
 
-.h1,
-.h3,
+.principal-title,
+.title-icono,
 .button,
+.button .link,
 .span-dot,
 .parrafo,
-.link,
 .texto-footer,
 .icono-footer {
   color: #060a24;
 }
 
-.h1,
+.link {
+  color: #FFFFFF;
+}
+
+.principal-title,
 .title-invitados {
   margin-bottom: 3%;
 }
 
-.h3 {
+.title-icono {
   font-size: 24px;
   letter-spacing: 0;
   text-align: center;
@@ -232,7 +236,7 @@ ul {
 
 .episodios {
   background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
-  clip-path: polygon(0 6%, 100% 0, 100% 96%, 0 100%);
+  clip-path: polygon(0 4%, 100% 0, 100% 96%, 0 100%);
   margin-top: 24px;
 }
 
@@ -356,12 +360,12 @@ ul {
     display: flex;
   }
 
-  .h1 {
+  .principal-title {
     font-size: 64px;
     margin-top: 12%;
   }
 
-  .h2 {
+  .secundary-title {
     font-size: 48px;
   }
 
@@ -401,6 +405,10 @@ ul {
   .menu {
     flex:0;
   }
+
+  .link {
+      color: #060a24;
+    }
 
   ul .menu-item:not(:first-child) {
     padding-left: 48px;
