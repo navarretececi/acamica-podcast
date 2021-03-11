@@ -174,17 +174,16 @@ li {
 
 .checkbox:checked ~ .menu-container {
   display:inline-block;
-  width: 116%;
+  width: 119%;
   background: #0000ec;
   letter-spacing: 0;
   line-height: 28px;
   height: 224px;
-  transition: all 1s ease-out;
-  display:flex;
+  display: flex;
   flex-direction: column;
   margin-top: 2%;
   padding-left: 7%;
-  margin-left: -10%;
+  margin-left: -12%;
 }
 
 .menu {
