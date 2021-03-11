@@ -12,43 +12,40 @@
   <body>
       <div class="contenedor">
 
-        <nav class="nav flex-row-mobile">
-          <div class="div-logo">
-            <img class="logo" src="images/logo.svg" alt="logo">
-          </div>
-          <div class="desktop-menu">
-            <ul class="flex-row-mobile">
-              <li class="desktop-item"><a class="link" href="#episodios">EPISODIOS</a></li>
-              <li class="desktop-item"><a class="link" href="#nosotros">NOSOTROS</a></li>
-              <li class="desktop-item"><a class="link" href="#entrevistas">ENTREVISTAS</a></li>
-              <li class="desktop-item"><a class="link" href="#topicos">TÓPICOS</a></li> 
-            </ul>
-          </div>
-          <div class="mobile-menu flex-column-mobile">
-            <input id="burger" class="checkbox" type="checkbox" />
-            <label for="burger" class="navigation-button">
-              <div class="menu-hamburguesa">
-                <svg width="30" height="30" viewBox="10 10 60 100">
-                  <path
-                    class="line line1"
-                    d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
-                  />
-                  <path class="line line2" d="M 20,50 H 80" />
-                  <path
-                    class="line line3"
-                    d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
-                  />
-                </svg>
+          <nav class="nav flex-row-mobile">
+              <div class="div-logo">
+                <img class="logo" src="images/logo.svg" alt="logo" />
               </div>
-            </label>
-            <ul class="menu-list-mobile flex-column-mobile">
-              <li class="mobile-item"><a class="link" href="#episodios">EPISODIOS</a></li>
-              <li class="mobile-item"><a class="link" href="#nosotros">NOSOTROS</a></li> 
-              <li class="mobile-item"><a class="link" href="#entrevistas">ENTREVISTAS</a></li> 
-              <li class="mobile-item"><a class="link" href="#topicos">TÓPICOS</a></li> 
-            </ul>
-          </div>
-        </nav>
+              <div class="menu">
+                <input id="burger" type="checkbox" class="checkbox" />
+                <div class="menu-burguer">
+                  <label for="burger" class="navigation-button">
+                    <div class="container-burger">
+                      <div class="linea linea-top"></div>
+                      <div class="linea linea-med"></div>
+                      <div class="linea linea-low"></div>
+                    </div>
+                  </label>
+                </div>
+                <div class="menu-container">
+                  <ul class="flex-row-desktop">
+                    <li class="desktop-item">
+                      <a class="link" href="#episodios">EPISODIOS</a>
+                    </li>
+                    <li class="desktop-item">
+                      <a class="link" href="#nosotros">NOSOTROS</a>
+                    </li>
+                    <li class="desktop-item">
+                      <a class="link" href="#entrevistas">ENTREVISTAS</a>
+                    </li>
+                    <li class="desktop-item">
+                      <a class="link" href="#topicos">TÓPICOS</a>
+                    </li>
+                  </ul>
+                </div>
+                
+              </div>
+            </nav>
 
         <article class="article flex-column-mobile margin-desktop">
           <h1 class="h1">Hello <span class="span-world">world</span> pale blue dot<span class="span-dot">.</span></h1>
@@ -146,6 +143,6 @@
             <a class="icono-footer" href="https://telegram.org/"> <i class="fab fa-telegram"></i> </a>
           </div>
         </footer>
-
       </div>
   </body>
+</html>
