@@ -9,6 +9,10 @@
   padding: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 a:link,
 a:visited,
 a:active {
