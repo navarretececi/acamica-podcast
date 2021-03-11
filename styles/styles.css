@@ -144,7 +144,7 @@ li {
 .linea {
   width: 28px;
   height: 2px;
-  transition: all 1s;
+  transition: all 0.5s;
   border-radius: 8px;
   background: #060a24;
 }
@@ -170,7 +170,7 @@ li {
 
 .checkbox:checked ~ .menu-container {
   display:inline-block;
-  width: 320px;
+  width: 116%;
   background: #0000ec;
   letter-spacing: 0;
   line-height: 28px;
@@ -178,8 +178,13 @@ li {
   transition: all 1s ease-out;
   display:flex;
   flex-direction: column;
-  margin-top: 5%;
-  padding-left: 10%;
+  margin-top: 2%;
+  padding-left: 7%;
+  margin-left: -10%;
+}
+
+.menu {
+  flex:1;
 }
 
 .checkbox:checked ~ .menu-container ul li {
@@ -385,10 +390,13 @@ ul {
     display: none;
   }
 
-  .menu-container{
+  .menu-container {
     display: flex;
     justify-content: flex-end;
-    flex: 6;
+  }
+
+  .menu {
+    flex:0;
   }
 
   ul .menu-item:not(:first-child) {
