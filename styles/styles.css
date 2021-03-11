@@ -388,6 +388,10 @@ ul {
     width: 345px;
   }
 
+  .article {
+    margin-top: 4%;
+  }
+
   .span-dot {
     color: #0000ec;
   }
