@@ -37,14 +37,14 @@ a:active {
   line-height: 42px;
 }
 
-.principal-title, 
-.secundary-title, 
+.principal-title,
+.secundary-title,
 .title-icono {
   font-family: "IBM Plex Sans", sans-serif;
 }
 
 li,
-.parrafo, 
+.parrafo,
 .texto-footer,
 .button,
 .menu-container {
@@ -156,20 +156,20 @@ li {
   justify-content: space-evenly;
 }
 
-.checkbox:checked + .menu-burguer .navigation-button .linea-med {
+.checkbox:checked+.menu-burguer .navigation-button .linea-med {
   opacity: 0;
 }
 
-.checkbox:checked + .menu-burguer .navigation-button .linea-top {
+.checkbox:checked+.menu-burguer .navigation-button .linea-top {
   transform: translate(0, 7px) rotate(45deg);
 }
 
-.checkbox:checked + .menu-burguer .navigation-button .linea-low {
+.checkbox:checked+.menu-burguer .navigation-button .linea-low {
   transform: translate(0px, -6px) rotate(-45deg);
 }
 
-.checkbox:checked ~ .menu-container {
-  display:inline-block;
+.checkbox:checked~.menu-container {
+  display: inline-block;
   width: 119%;
   background: #0000ec;
   letter-spacing: 0;
@@ -183,10 +183,10 @@ li {
 }
 
 .menu {
-  flex:1;
+  flex: 1;
 }
 
-.checkbox:checked ~ .menu-container ul li {
+.checkbox:checked~.menu-container ul li {
   color: #FFFFFF;
 }
 
@@ -398,12 +398,12 @@ ul {
   }
 
   .menu {
-    flex:0;
+    flex: 0;
   }
 
   .link {
-      color: #060a24;
-    }
+    color: #060a24;
+  }
 
   ul .menu-item:not(:first-child) {
     padding-left: 48px;
