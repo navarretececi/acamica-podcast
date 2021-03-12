@@ -1,7 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 
 * {
   box-sizing: border-box;
@@ -53,14 +51,8 @@ li,
   font-family: "IBM Plex Mono", monospace;
 }
 
-.principal-title,
-.title-icono,
-.button,
-.button .link,
-.span-dot,
-.parrafo,
-.texto-footer,
-.icono-footer {
+.letra-azul-oscuro,
+.button .link {
   color: #060a24;
 }
 
