@@ -170,14 +170,12 @@ li {
 }
 
 .checkbox:checked~.menu-container {
-  display: inline-block;
   width: 119%;
   background: #0000ec;
   letter-spacing: 0;
   line-height: 28px;
   height: 224px;
   display: flex;
-  flex-direction: column;
   margin-top: 2%;
   padding-left: 7%;
   margin-left: -12%;
@@ -396,6 +394,13 @@ ul {
   .menu-container {
     display: flex;
     justify-content: flex-end;
+  }
+
+  .checkbox:checked~.menu-container {
+    background: white;
+    height: 100%;
+    flex: 0;
+    display: flex;
   }
 
   .menu {
