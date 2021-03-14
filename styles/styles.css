@@ -39,7 +39,7 @@ a:active {
 }
 
 .principal-title,
-.secundary-title, 
+.secundary-title,
 .title-icono {
   font-family: "IBM Plex Sans", sans-serif;
 }
@@ -105,7 +105,7 @@ li,
   background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
 }
 
-.button a:hover{
+.button a:hover {
   color: #FFFFFF;
 }
 
@@ -179,18 +179,19 @@ li {
 }
 
 .checkbox:checked~.menu .menu-container {
-  width: 100%;
   background: #0000ec;
   letter-spacing: 0;
   line-height: 28px;
   height: 224px;
   display: flex;
-  margin-top: 4%;
-  padding-left: 7%;
+  padding-left: 5%;
 }
 
 .menu {
-  flex: 1;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 40px;
 }
 
 .checkbox:checked~.menu-container ul li {
@@ -401,12 +402,15 @@ ul {
     display: none;
   }
 
+  /* Dede aquí:
+  En caso de dejar chequeado el menu en version mobile y pasar a versión desktop corrije los errores que podrían darse si el menu no se cierra*/
+
   .menu-container {
     display: flex;
     justify-content: flex-end;
   }
 
-  .checkbox:checked~ .menu .menu-container {
+  .checkbox:checked~.menu .menu-container {
     background: white;
     height: 100%;
     flex: 0;
@@ -416,9 +420,16 @@ ul {
   .menu {
     display: flex;
     justify-content: flex-end;
+    position: relative;
+    top: 0
   }
 
-  .link, .menu-item .link {
+  /* Hasta aquí:
+  En caso de dejar chequeado el menu en version mobile y pasar a versión desktop corrije los errores que podrían darse si el menu no se cierra*/
+
+
+  .link,
+  .menu-item .link {
     color: #060a24;
   }
 
