@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
 
-@keyframes menu-desplegable{
+@keyframes menu-desplegable {
   0% {
     background: #00f3bb;
     height: 0px;
   }
+
   100% {
     background: #0000ec;
     height: 224px;
