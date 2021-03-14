@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
 
 
 * {
@@ -39,9 +39,13 @@ a:active {
 }
 
 .principal-title,
-.secundary-title,
+.secundary-title, 
 .title-icono {
   font-family: "IBM Plex Sans", sans-serif;
+}
+
+.title-icono {
+  font-weight: bold;
 }
 
 li,
@@ -88,6 +92,7 @@ li,
   text-align: center;
   line-height: 22px;
   margin-top: 8%;
+  font-weight: bold;
 }
 
 .button,
@@ -98,6 +103,10 @@ li,
 
 .button:hover {
   background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
+}
+
+.button a:hover{
+  color: #FFFFFF;
 }
 
 .flex-row-mobile {
@@ -157,28 +166,27 @@ li {
   justify-content: space-evenly;
 }
 
-.checkbox:checked+.menu-burguer .navigation-button .linea-med {
+.checkbox:checked~.menu-burguer .navigation-button .linea-med {
   opacity: 0;
 }
 
-.checkbox:checked+.menu-burguer .navigation-button .linea-top {
+.checkbox:checked~.menu-burguer .navigation-button .linea-top {
   transform: translate(0, 7px) rotate(45deg);
 }
 
-.checkbox:checked+.menu-burguer .navigation-button .linea-low {
+.checkbox:checked~.menu-burguer .navigation-button .linea-low {
   transform: translate(0px, -6px) rotate(-45deg);
 }
 
-.checkbox:checked~.menu-container {
-  width: 119%;
+.checkbox:checked~.menu .menu-container {
+  width: 100%;
   background: #0000ec;
   letter-spacing: 0;
   line-height: 28px;
   height: 224px;
   display: flex;
-  margin-top: 2%;
+  margin-top: 4%;
   padding-left: 7%;
-  margin-left: -12%;
 }
 
 .menu {
@@ -404,10 +412,11 @@ ul {
   }
 
   .menu {
-    flex: 0;
+    display: flex;
+    justify-content: flex-end;
   }
 
-  .link {
+  .link, .menu-item .link {
     color: #060a24;
   }
 
