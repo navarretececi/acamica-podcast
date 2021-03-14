@@ -121,7 +121,12 @@ li,
 
 .nav {
   justify-content: space-between;
-  align-items: end;
+  align-items: center;
+}
+
+.div-logo {
+  align-items: center;
+  display: flex;
 }
 
 li {
