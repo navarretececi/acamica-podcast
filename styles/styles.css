@@ -347,9 +347,11 @@ ul {
   transform: scale(2, 2);
 }
 
-.button a,
-.mobile-item a {
-  display: block;
+.button a {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -404,7 +406,7 @@ ul {
     justify-content: flex-end;
   }
 
-  .checkbox:checked~.menu-container {
+  .checkbox:checked~ .menu .menu-container {
     background: white;
     height: 100%;
     flex: 0;
