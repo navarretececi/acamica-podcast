@@ -55,10 +55,6 @@ a:active {
   font-family: "IBM Plex Sans", sans-serif;
 }
 
-.title-icono {
-  font-weight: bold;
-}
-
 li,
 .parrafo,
 .texto-footer,
@@ -82,6 +78,7 @@ li,
 }
 
 .title-icono {
+  font-weight: bold;
   font-size: 24px;
   letter-spacing: 0;
   text-align: center;
@@ -104,6 +101,7 @@ li,
   line-height: 22px;
   margin-top: 8%;
   font-weight: bold;
+  outline: none;
 }
 
 .button,
@@ -145,24 +143,14 @@ li {
   line-height: 28px;
 }
 
-.desktop-menu,
 .checkbox,
-.menu-container,
 .detail-desktop {
   display: none;
-}
-
-.mobile-menu {
-  align-items: flex-end;
 }
 
 .navigation-button {
   display: flex;
   justify-content: flex-end;
-}
-
-.button {
-  outline: none;
 }
 
 /* Inicio estilos menu hamburguesa */
@@ -262,14 +250,14 @@ ul {
   margin-left: 5%;
 }
 
+.contenedor-iframe {
+  align-items: center;
+}
+
 .iframe {
   padding-right: 2%;
   padding-left: 2%;
   margin-top: 2%;
-}
-
-.contenedor-iframe {
-  align-items: center;
 }
 
 .iframe-superior {
@@ -468,6 +456,23 @@ ul {
     text-decoration: line-through;
   }
 
+  .contenedor-episodios {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  .title-episodios {
+    margin-left: 10%;
+  }
+
+  .iframe {
+    flex: 2;
+  }
+
+  .iframe-inferior {
+    padding-bottom: 17%;
+  }
+
   .section-donde-venimos {
     margin-left: 7%;
     margin-right: 7%;
@@ -505,10 +510,6 @@ ul {
     max-width: 628px;
   }
 
-  .title {
-    margin-top: 129px;
-  }
-
   .novedades {
     align-items: center;
     height: 518px;
@@ -522,23 +523,6 @@ ul {
   .margin-footer {
     margin-top: 3%;
     margin-bottom: 3%;
-  }
-
-  .title-episodios {
-    margin-left: 10%;
-  }
-
-  .contenedor-episodios {
-    margin-left: 3%;
-    margin-right: 3%;
-  }
-
-  .iframe {
-    flex: 2;
-  }
-
-  .iframe-inferior {
-    padding-bottom: 17%;
   }
 
   .flex-row-desktop {
