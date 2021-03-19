@@ -29,6 +29,24 @@ a:active {
   text-decoration: none;
 }
 
+li {
+  display: flex;
+  list-style: none;
+  transition: all 0.5s;
+  align-items: center;
+  line-height: 28px;
+  z-index: -1;
+}
+
+ul {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+}
+
 .contenedor {
   background-color: #ffffff;
   opacity: 100%;
@@ -138,11 +156,6 @@ li,
   display: flex;
 }
 
-li {
-  list-style: none;
-  line-height: 28px;
-}
-
 .checkbox,
 .detail-desktop {
   display: none;
@@ -199,24 +212,8 @@ li {
   top: 40px;
 }
 
-.checkbox:checked~.menu-container ul li {
-  color: #FFFFFF;
-}
-
-li {
-  display: flex;
-  list-style: none;
-  transition: all 0.5s;
-  align-items: center;
-}
-
-ul {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 100%;
-  width: 100%;
+.checkbox:checked~.menu .menu-container ul li {
+  z-index: 1;
 }
 
 /* Fin estilos menu hamburguesa */
@@ -408,7 +405,9 @@ ul {
   }
 
   /* Dede aquí:
-  En caso de dejar chequeado el menu en version mobile y pasar a versión desktop corrije los errores que podrían darse si el menu no se cierra*/
+     En caso de dejar chequeado el menu en version mobile y pasar a versión desktop corrije los errores que podrían
+     darse si el menu no se cierra
+  */
 
   .menu-container {
     display: flex;
@@ -429,9 +428,14 @@ ul {
     top: 0
   }
 
-  /* Hasta aquí:
-  En caso de dejar chequeado el menu en version mobile y pasar a versión desktop corrije los errores que podrían darse si el menu no se cierra*/
+  li{
+    z-index: 1;
+  }
 
+  /* Hasta aquí:
+     En caso de dejar chequeado el menu en version mobile y pasar a versión desktop corrije los errores que podrían
+     darse si el menu no se cierra
+  */
 
   .link,
   .menu-item .link {
