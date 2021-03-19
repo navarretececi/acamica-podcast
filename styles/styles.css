@@ -536,6 +536,7 @@ li,
 }
 
 @media only screen and (min-width: 1201px) {
+  
   body {
     display: flex;
     justify-content: center;
